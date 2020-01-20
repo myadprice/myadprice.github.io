@@ -1,0 +1,73 @@
+.brand-img {
+    height: 1.6rem;
+}
+
+.navbar {
+    padding: .3rem 1rem;
+}
+
+@font-face {
+    font-family: RalewayLight;
+    src: url("fonts/Raleway-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: ZillaSlab;
+    src: url("fonts/ZillaSlab-Medium.otf") format("opentype");
+}
+
+h1, h2, h3, h4 {
+    font-family: ZillaSlab;
+}
+
+h1, h2, h3, h4, p {
+    margin-bottom: 1.5rem !important;
+}
+
+p, em, li, button {
+    font-family: RalewayLight;
+}
+
+.button-icon {
+    height: 30px;
+    margin-right: 5px;
+}
+
+.list-col-2 {
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+    list-style: none;
+}
+
+.list-col-2 a {
+    color: #1565c0;
+}
+
+#navbarNav {
+    justify-content: flex-end;
+}
+
+.carousel-item img {
+    margin: 0 auto;
+    height: 100%;
+}
+
+.carousel-control-next-icon:after {
+    font-family: sans-serif;
+    content: '>';
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.carousel-control-prev-icon:after {
+    font-family: serif;
+    content: '<';
+    font-size: 1.5rem;
+    color: gray;
+}
+
+div.github-button {
+    float: right;
+    margin: 1rem;
+}

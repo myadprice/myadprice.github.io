@@ -1,0 +1,116 @@
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="google" content="notranslate" />
+        <meta http-equiv="Content-Language" content="en" />
+        <meta property="og:title" content="MyAdPrice - Track ad activity on websites you visit. See bids and revenue" />
+        <meta property="og:image" content="https://myadprice.github.io/static/images/fblogo.jpg" />
+        <meta property="og:description" content="Free browser extension developed by university researchers" />
+
+        <link rel="icon" type="image/png" href="https://myadprice.github.io/static/images/icon.png" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <script
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"
+        ></script>
+
+        <link
+            rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous"
+        />
+
+        <link rel="stylesheet" href="/static/style2.css" />
+        <title>MyAdPrice</title>
+        <link rel="icon" type="image/png" href="/static/images/icon.png" />
+    </head>
+
+    <body>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand font-logo" href="#"><img class="brand-img" src="static/images/logo.png"/></a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/terms.html">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="mt-5 container">
+            <div class="text-center">
+                <h1>MyAdPrice</h1>
+                <h6>An ad-tracking extension for Chrome and Firefox</h6>
+
+                <p>
+                    <b>MyAdPrice</b> allows you to track how much money advertisers bid to show you ads as you surf the
+                    Web. It utilizes hooks in the <a href="http://prebid.org/">Prebid</a> library along with other
+                    methods to track this activity. By default, it sends out no data from the user's device. However,
+                    users can opt-in to send specific, anonymized <a href="terms">statistics</a> to our servers to help
+                    in our research.
+                </p>
+
+                <p>
+                    MyAdPrice is a product of research at Duke University, MPI Informatics, UIUC, and ETH Zürich.
+                    <a href="http://cspeed.net">Find out more.</a>
+                    <a href="https://www.dropbox.com/s/7ftqx1zuiu1x0s8/HB_dataset_15102019.zip">here</a>.
+                </p>
+                <div class="mb-4 text-center">
+                    <a
+                        href="https://chrome.google.com/webstore/detail/my-ad-price/jlgpjclbdjpheiljedblbjkjjplolopm"
+                        target="_blank"
+                    >
+                        <button type="button" class="col-3 btn btn-outline-dark">
+                            <img class="button-icon" src="/static/images/chrome.svg" />
+                            Get Chrome Extension
+                        </button>
+                    </a>
+                    <a href="https://addons.mozilla.org/en-US/firefox/addon/myadprice/" target="_blank">
+                        <button type="button" class="col-3 btn btn-outline-dark">
+                            <img class="button-icon" src="/static/images/firefox.png" />
+                            Get Firefox Add-on
+                        </button>
+                    </a>
+                    <a href="https://github.com/myadprice/myadprice/" target="_blank">
+                        <button type="button" class="col-3 btn btn-outline-dark">
+                            <img class="button-icon" src="/static/images/github.png" />
+                            Follow on Github
+                        </button>
+                    </a>
+                </div>
+
+                <img class="m-auto col-10 d-block" src="/static/images/screenshot.png" alt="First slide" />
+
+                <p>
+                    Please note that ad blockers <b>must</b> be uninstalled/disabled for MyAdPrice to track ad activity.
+                    Also, many websites avoid using header bidding techniques, especially if you are in Europe, unless
+                    you explicity accept cookies.
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
