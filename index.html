@@ -64,6 +64,7 @@
         <div class="mt-5 container">
             <div class="text-center">
 
+
                 <h1>MyAdPrice</h1>
                 <h6>An ad-tracking extension for Chrome and Firefox</h6>
 
@@ -105,12 +106,12 @@
 
                 <img class="m-auto col-10 d-block" src="/static/images/screenshot.png" alt="First slide" />
                 <br>
-                <p>
-                    Please note that ad blockers <b>must</b> be uninstalled/disabled for MyAdPrice to track ad activity.
-                    Also, many websites avoid using header bidding techniques, especially if you are in Europe, unless
-                    you explicity accept cookies.
-                </p>
+                
             </div>
+<small><i>
+                    Please note that ad blockers <b>must</b> be uninstalled/disabled for MyAdPrice to track ad activity.
+                    Also, many websites avoid using header bidding if you are in Europe.
+                </p></i></small>
             <h2>Measurements</h2>
             <hr>
             <p>We have collected and analyzed 8 months of data from 400 users. This measurement study will
@@ -118,13 +119,25 @@
             The dataset used for this study can be downloaded 
             <a href="https://www.dropbox.com/s/7ftqx1zuiu1x0s8/HB_dataset_15102019.zip">here</a>.</p>
 
-
+            <p>In our analysis, we verified the central trade-off in header bidding, that is, contacting more
+            ad exchanges indeed increases revenue as well as total auction duration. While 80% of bid requests take
+            longer than 800ms, a large fraction of this time is wasted on performing TCP and TLS handshakes. Please
+            refer to the full paper here for more details.
+            </p>
+            <div class="row">
+                <img class="col-4 d-block" src="/static/images/cpm_by_exchanges_contacted.png"/>
+                <img class="col-4 d-block" src="/static/images/bids_until_time.png"/>
+                <img class="col-4 d-block" src="/static/images/timing_breakdown.png"/>
+            </div>
+            <br>
             <h2>Reviews</h2>
             <hr>
             <ul>
                 <li>Automatad: <a href="https://headerbidding.co/header-bidding-chrome-extension/">https://headerbidding.co/header-bidding-chrome-extension/</a></li>
                 <li>BannerTag: <a href="https://www.bannertag.com/useful-header-bidding-chrome-extensions/">https://www.bannertag.com/useful-header-bidding-chrome-extensions/</a></li>
             </ul>
+            <br>
+            <br>
         </div>
     </body>
 </html>
