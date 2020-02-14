@@ -1,74 +1,68 @@
 <html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="google" content="notranslate" />
-        <meta http-equiv="Content-Language" content="en" />
-        <meta property="og:title" content="MyAdPrice - Track ad activity on websites you visit. See bids and revenue" />
-        <meta property="og:image" content="https://myadprice.github.io/static/images/fblogo.jpg" />
-        <meta property="og:description" content="Free browser extension developed by university researchers" />
 
-        <link rel="icon" type="image/png" href="https://myadprice.github.io/static/images/icon.png" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+<head>
+    <meta charset="utf-8" />
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="Content-Language" content="en" />
+    <meta property="og:title" content="MyAdPrice - Track ad activity on websites you visit. See bids and revenue" />
+    <meta property="og:image" content="https://myadprice.github.io/static/images/fblogo.jpg" />
+    <meta property="og:description" content="Free browser extension developed by university researchers" />
 
-        <script
-            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
+    <link rel="icon" type="image/png" href="https://myadprice.github.io/static/images/icon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous"
-        />
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
-        <link rel="stylesheet" href="/static/style2.css" />
-        <title>MyAdPrice</title>
-        <link rel="icon" type="image/png" href="/static/images/icon.png" />
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
 
-    <body>
-        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand font-logo" href="#"><img class="brand-img" src="static/images/logo.png"/></a>
+    <link rel="stylesheet" href="/static/style2.css" />
+    <title>MyAdPrice</title>
+    <link rel="icon" type="image/png" href="/static/images/icon.png" />
+</head>
 
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-toggle="collapse"
-                data-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
+<body data-spy="scroll" data-target="#mynavbar">
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark" id="mynavbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">MyAdPrice</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/terms.html">Terms of Use</a>
-                    </li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#coverage">Coverage</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#terms">Terms</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#details">Details</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#measurements">Measurements</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </div>
-        </nav>
-        <div class="mt-5 container">
-            <div class="text-center">
+        </div>
+        <!--/.nav-collapse -->
+    </nav>
 
-
-                <h1>MyAdPrice</h1>
-                <h6>An ad-tracking extension for Chrome and Firefox</h6>
-
-                <p>
+    <div class="container">
+        <section id="about">
+        <div class="row justify-content-center">
+            <h1>MyAdPrice</h1>
+        </div>
+        <div class="row justify-content-center">
+            <h6>An ad-tracking extension for Chrome and Firefox</h6>
+        </div>
+        <hr>
+        <div class="row justify-content-center">
+            <div class="col-8">
+                <p class="text-center">
                     <b>MyAdPrice</b> allows you to track how much money advertisers bid to show you ads as you surf the
                     Web. It utilizes hooks in the <a href="http://prebid.org/">Prebid</a> library along with other
                     methods to track this activity. By default, it sends out no data from the user's device. However,
@@ -76,101 +70,214 @@
                     in our research.
                 </p>
 
-                <p>
+                <p class="text-center">
                     MyAdPrice is a product of research at Duke University, MPI Informatics, UIUC, and ETH Zürich.
                     <a href="http://cspeed.net">Find out more.</a>
                 </p>
-                <div class="mb-4 text-center">
-                    <a
-                        href="https://chrome.google.com/webstore/detail/my-ad-price/jlgpjclbdjpheiljedblbjkjjplolopm"
-                        target="_blank"
-                    >
-                        <button type="button" class="col-3 btn btn-outline-dark">
-                            <img class="button-icon" src="/static/images/chrome.svg" />
-                            Get Chrome Extension
-                        </button>
-                    </a>
-                    <a href="https://addons.mozilla.org/en-US/firefox/addon/myadprice/" target="_blank">
-                        <button type="button" class="col-3 btn btn-outline-dark">
-                            <img class="button-icon" src="/static/images/firefox.png" />
-                            Get Firefox Add-on
-                        </button>
-                    </a>
-                    <a href="https://github.com/myadprice/myadprice/" target="_blank">
-                        <button type="button" class="col-3 btn btn-outline-dark">
-                            <img class="button-icon" src="/static/images/github.png" />
-                            Follow on Github
-                        </button>
-                    </a>
-                </div>
-
-                <img class="m-auto col-10 d-block" src="/static/images/screenshot.png" alt="First slide" />
-                <br>
-                
             </div>
-<small><i>
-                    Please note that ad blockers <b>must</b> be uninstalled/disabled for MyAdPrice to track ad activity.
-                    Also, many websites avoid using header bidding if you are in Europe.
-                </p></i></small>
+        </div>
+        <div class="mb-4 text-center">
+            <a href="https://chrome.google.com/webstore/detail/my-ad-price/jlgpjclbdjpheiljedblbjkjjplolopm"
+                target="_blank">
+                <button type="button" class="col-2 btn btn-outline-dark">
+                    <img class="button-icon" src="/static/images/chrome.svg" />
+                    Get Chrome Extension
+                </button>
+            </a>
+            <a href="https://addons.mozilla.org/en-US/firefox/addon/myadprice/" target="_blank">
+                <button type="button" class="col-2 btn btn-outline-dark">
+                    <img class="button-icon" src="/static/images/firefox.png" />
+                    Get Firefox Add-on
+                </button>
+            </a>
+            <a href="https://github.com/myadprice/myadprice/" target="_blank">
+                <button type="button" class="col-2 btn btn-outline-dark">
+                    <img class="button-icon" src="/static/images/github.png" />
+                    Follow on Github
+                </button>
+            </a>
+        </div>
 
-            <h2>Community Coverage</h2>
+        <br>
+        <img class="m-auto col-10 d-block" src="/static/images/screenshot.png" alt="First slide" />
+        <br>
+
+        <div class="row">
+            <div class="col-6">
+                <p><small><i>
+                            Please note that ad blockers <b>must</b> be uninstalled/disabled for MyAdPrice to track ad
+                            activity.
+                        </i></small></p>
+            </div>
+        </div>
+    </section>
+
+        <section id="coverage">
+            <h3 class="callout">Community Coverage</h3>
             <hr>
-            <p>MyAdPrice has received considerable attention from the ad tech community. Web site developers optimizing
-                their strategy tend to find MyAdPrice and the information it provides useful. They use it to observe
-                the bids and request timing they get from different ad exchanges. Here are some reviews of MyAdPrice
-                from the ad tech community:
-            </p>
-            <ul>
-                <li>Automatad: <a href="https://headerbidding.co/header-bidding-chrome-extension/">https://headerbidding.co/header-bidding-chrome-extension/</a></li>
-                <li>BannerTag: <a href="https://www.bannertag.com/useful-header-bidding-chrome-extensions/">https://www.bannertag.com/useful-header-bidding-chrome-extensions/</a></li>
-            </ul>
-            <br>
+            <div class="row">
+                <div class="col-8">
+                    <p>MyAdPrice has received considerable attention from the ad tech community. Web site developers
+                        optimizing
+                        their strategy tend to find MyAdPrice and the information it provides useful. They use it to
+                        observe
+                        the bids and request timing they get from different ad exchanges. Here are some reviews of
+                        MyAdPrice
+                        from the ad tech community:
+                    </p>
+                    <ul>
+                        <li>Automatad: <a
+                                href="https://headerbidding.co/header-bidding-chrome-extension/">https://headerbidding.co/header-bidding-chrome-extension/</a>
+                        </li>
+                        <li>BannerTag: <a
+                                href="https://www.bannertag.com/useful-header-bidding-chrome-extensions/">https://www.bannertag.com/useful-header-bidding-chrome-extensions/</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
 
-            <h2>Data Collection</h2>
-            <hr>
-            <p>By default, <i>MyAdPrice</i> sends out <b>no data</b> from your
-            browser. The extension uses the browser's local storage to store
-            data pertaining to ad slots in different pages and the bids received
-            for each. You may <i>opt in</i> to share data including domain names
-            of web pages you visit, i.e., only those that use header bidding, ad
-            slots on the pages, exchanges contacted for ads, bids received,
-            timing information on various phases of the in-browser auction, and,
-            lastly, their geographical location at city level. The data shared
-            does <b>not</b> have any information to uniquely identify a user. We
-            <b>do not</b> learn anything about you.</p>
+        <section id="terms">
+            <div class="row">
+                <div class="col-8">
+                    <h3 class="callout">Terms</h3>
+        <hr>
 
-            <p>Please see our <a href="terms.html">terms</a> for further
-            details. We collected an eight-month dataset from 400 users for our
-            study. We have also made that dataset publicly available <a
-            href="https://www.dropbox.com/s/7ftqx1zuiu1x0s8/HB_dataset_15102019.zip">here</a></p>
+                    <h5>GDPR Compliance</h5>
+                    <p>MyAdPrice is GDPR compliant. By default, we do not store <strong>any information</strong> about
+                        our users. We do not
+                        use cookies.</p>
 
-            <h2>Measurements</h2>
-            <hr>
-            <p>We have collected and analyzed 8 months of data from 400 users. This measurement study will
-            appear in the <i>20<sup>th</sup> International Passive and Active Measurements Conference (PAM)</i>.
-            The dataset used for this study can be downloaded 
-            <a href="https://www.dropbox.com/s/7ftqx1zuiu1x0s8/HB_dataset_15102019.zip">here</a>.</p>
+                    <h5>Data Collection</h5>
+                    <p>By default, <i>MyAdPrice</i> sends out <b>no data</b> from your
+                        browser. The extension uses the browser's local storage to store
+                        data pertaining to ad slots in different pages and the bids received
+                        for each. You may <i>opt in</i> to share data including domain names
+                        of web pages you visit, i.e., only those that use header bidding, ad
+                        slots on the pages, exchanges contacted for ads, bids received,
+                        timing information on various phases of the in-browser auction, and,
+                        lastly, their geographical location at city level. The data shared
+                        does <b>not</b> have any information to uniquely identify a user. We
+                        <b>do not</b> learn anything about you.</p>
 
-            <p>In our analysis, we verified the central trade-off in header bidding, that is, contacting more
-            ad exchanges indeed increases revenue as well as total auction duration. While 80% of bid requests take
-            longer than 800ms, a large fraction of this time is wasted on performing TCP and TLS handshakes. Please
-            refer to the full paper here for more details.
-            </p>
+                    <p>When you opt in, the following data is sent to our servers:</p>
+                    <ul>
+                        <li>The domain names of the websites you visit that use Prebid.js</li>
+                        <li>The city, state, and country of your browser</li>
+                        <li>Number of ad slots on the page, their labels, and sizes</li>
+                        <li>Responses from ad exchanges, their bid amounts and latencies</li>
+                        <li>Breakdown of timing of these responses---by domain lookup,
+                            connection setup, etc.</li>
+                    </ul>
+
+                    <p>MyAdPrice stores <strong>on your device</strong> using the browser's local storage:</p>
+                    <ul>
+                        <li>Average bid prices for websites you visit</li>
+                        <li>Revenue these websites have earned by showing you ads</li>
+                    </ul>
+
+                    <p>If the above does not address your privacy concerns adequately, please let us know at
+                        waqeel [at] cs [dot] duke [dot] edu</p>
+
+                    <h5>Source code</h5>
+                    <p>MyAdPrice is an open source project, licensed under
+                        <a href="https://www.gnu.org/licenses/">GPLv3</a>. The
+                        source code can be accessed <a href="https://github.com/waqaraqeel/myadprice">here</a>.
+                </div>
+            </div>
+        </section>
+
+        <section id="details">
+            <div class="page-header">
+                <h3 class="callout">Technical Details</h3>
+        <hr>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <p>Most Web sites that show ads use some libraries to
+                        facilitate the serving and display of ads.
+                        <a href="http://prebid.org">Prebid.js</a> is one such
+                        library. MyAdPrice works by probing well-known elements
+                        of Prebid.js and displaying the obtained information in
+                        a convenient format. This means that MyAdPrice does not
+                        do anything when you visit a website that does not show
+                        ads, or does not use Prebid.js to show ads.</p>
+                    <p>For more details, please see the MyAdprice <a
+                            href="https://waqaraqeel.github.io/assets/pam-final.pdf">research
+                            paper</a>
+                        titled <em>"Untangling Header Bidding Lore"</em>. This
+                        paper was published at the <a href="https://pam2020.cs.uoregon.edu/">
+                            Passive and Active Measurements Conference 2020</a>.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="measurements">
+            <div class="row">
+                <div class="col-8">
+                    <div class="page-header">
+                        <h3 class="callout">Measurements</h3>
+        <hr>
+                    </div>
+                    <p>We have collected and analyzed 8 months of data from 400 users. This measurement study will
+                        appear in the <i>20<sup>th</sup> International Passive and Active Measurements Conference
+                            (PAM)</i>.
+                        The dataset used for this study can be downloaded
+                        <a href="https://www.dropbox.com/s/7ftqx1zuiu1x0s8/HB_dataset_15102019.zip">here</a>.</p>
+
+                    <p>In our analysis, we verified the central trade-off in header bidding, that is, contacting more
+                        ad exchanges indeed increases revenue as well as total auction duration. While 80% of bid
+                        requests take
+                        longer than 800ms, a large fraction of this time is wasted on performing TCP and TLS handshakes.
+                        Please
+                        refer to the full paper here for more details.
+                    </p>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-4">
-                    <img class="img-fluid" src="/static/images/cpm_by_exchanges_contacted.png"/>
+                    <img class="img-fluid" src="/static/images/cpm_by_exchanges_contacted.png" />
                 </div>
                 <div class="col-4">
-                    <img class="img-fluid" src="/static/images/bids_until_time.png"/>
+                    <img class="img-fluid" src="/static/images/bids_until_time.png" />
+                </div>
+                <br>
+                </div>
+                <br>
+            <div class="row">
+                <div class="col-4">
+                    <img class="img-fluid" src="/static/images/bidders_auction_duration.png" />
                 </div>
                 <div class="col-4">
-                    <img class="img-fluid" src="/static/images/timing_breakdown.png"/>
+                    <img class="img-fluid" src="/static/images/timing_breakdown.png" />
                 </div>
             </div>
-            <br>
-            
-            <br>
-            <br>
-        </div>
-    </body>
+        </section>
+
+
+        <section id="contact">
+            <div class="page-header">
+                <h3 class="callout">Contact</h3>
+        <hr>
+            </div>
+            <div class="row">
+                <div class="col-8">
+                    <p>MyAdPrice is a project of the <a href="https://cspeed.net">CSpeed Team</a>.
+                        The authors of this tool and paper are: Waqar Aqeel,
+                        Debopam Bhattacherjee, Balakrishnan Chandrasekaran, P. Brighten Godfrey,
+                        Gregory Laughlin, Bruce Maggs, and Ankit Singla.
+                    </p>
+
+                    <p>Please feel free to contact waqeel [at] cs [dot] duke [dot] edu for any
+                        questions or feedback.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    </div>
+</body>
+
 </html>

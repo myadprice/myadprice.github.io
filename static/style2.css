@@ -2,35 +2,53 @@
     height: 1.6rem;
 }
 
+
+/* h1, h2, h3, h4 { */
+/* } */
+
+/* h1, h2, h3, h4, p { */
+    /* margin-bottom: 1.5rem !important; */
+/* } */
+
+/* p, em, li, button { */
+/* } */
+html {
+    scroll-behavior: smooth
+}
+section {
+    padding-top: 40px;
+}
+
 .navbar {
-    padding: .3rem 1rem;
+    padding: 0;
 }
 
-@font-face {
-    font-family: RalewayLight;
-    src: url("fonts/Raleway-Light.ttf") format("truetype");
+.navbar-brand {
+    font-size: 1.1rem;
+    font-weight: 200;
 }
 
-@font-face {
-    font-family: ZillaSlab;
-    src: url("fonts/ZillaSlab-Medium.otf") format("opentype");
+.nav-link {
+    font-size: 0.9rem;
 }
 
-h1, h2, h3, h4 {
-    font-family: ZillaSlab;
+.bg-dark {
+    background-color: #212529 !important;
+}
+.nav-link.active {
+    background-image: linear-gradient(#212529, #414951);
 }
 
-h1, h2, h3, h4, p {
-    margin-bottom: 1.5rem !important;
+p, button, .btn, li {
+    font-size: small;
 }
-
-p, em, li, button {
-    font-family: RalewayLight;
+small {
+    font-size: smaller;
 }
 
 .button-icon {
-    height: 30px;
-    margin-right: 5px;
+    height: 20px;
+    margin-top: -4px;
 }
 
 .list-col-2 {
@@ -42,10 +60,6 @@ p, em, li, button {
 
 .list-col-2 a {
     color: #1565c0;
-}
-
-#navbarNav {
-    justify-content: flex-end;
 }
 
 .carousel-item img {
